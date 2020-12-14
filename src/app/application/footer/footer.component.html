@@ -1,0 +1,44 @@
+<footer class="bg-dark">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-6 col-md-6 mt-3">
+                <h5 class="text-light"><u>Liens rapides</u></h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a [routerLink]="['/home']"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a [routerLink]="['/formulaire']"><i class="fa fa-angle-double-right"></i>Formulaire</a></li>
+                    <li><a [routerLink]="['/crud']"><i class="fa fa-angle-double-right"></i>Crud</a></li>
+                    <li><a [routerLink]="['/fun']"><i class="fa fa-angle-double-right"></i>Fun</a></li>
+                    <li><a [routerLink]="['/contact']"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 mt-3">
+                <h5 class="text-light"><u>Tutoriels</u></h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a [routerLink]="['/tutoriel', 1]"><i class="fa fa-angle-double-right"></i>Angular 10</a></li>
+                    <li><a [routerLink]="['/tutoriel', 2]"><i class="fa fa-angle-double-right"></i>Crud</a></li>
+                    <li><a [routerLink]="['/tutoriel', 3]"><i class="fa fa-angle-double-right"></i>Relations</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x text-primary mx-2"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x text-info mx-2"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.google.com/" target="_blank"><i class="fab fa-google-plus fa-2x text-danger mx-2"></i></a></li>
+                    <li class="list-inline-item"><a [routerLink]="['/contact']"><i class="fas fa-envelope fa-2x text-warning mx-2"></i></a></li>
+                </ul>
+            </div>
+            <hr>
+        </div>	
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                <p>Made with <span><i class="fas fa-heart text-danger"></i></span> by Jérémy Mailhot </p>
+                <p class="h6">Cégep André-Laurendeau &copy;All right Reserved.</p>
+            </div>
+            <hr>
+        </div>	
+    </div>
+</footer>
+

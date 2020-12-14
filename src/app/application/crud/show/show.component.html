@@ -1,0 +1,54 @@
+<div class="container-fluid p-4">
+    <h1 class="text-center display-4 mb-4 col-md-6">Visualiser votre animal</h1>
+    <form [formGroup]="showAnimalForm" class="col-md-6">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" formControlName="name" class="form-control" [(ngModel)]="animal.name"  />
+        </div>
+    
+        <div class="form-group">
+            <label for="subscriptionType">Type</label>
+            <select class="form-control" id="subscriptionType" formControlName="type" [(ngModel)]="animal.type" >
+              <option>Chat</option>
+              <option>Chien</option>
+              <option>Cheval</option>
+              <option>Chèvre</option>
+              <option>Cochon</option>
+              <option>Oiseau</option>
+              <option>Vache</option>
+              <option>Autre</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="color">Couleur *</label>
+            <select class="form-control" id="color" formControlName="color" [(ngModel)]="animal.color">
+              <option value="Noir">Noir</option>
+              <option value="Brun">Brun</option>
+              <option value="Jaune">Jaune</option>
+              <option value="Bleu">Bleu</option>
+              <option value="Rouge">Rouge</option>
+              <option value="Vert">Vert</option>
+              <option value="Blanc">Blanc</option>
+              <option value="Rose">Rose</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="age">Âge</label>
+            <input type = "number" id="age" min="0" formControlName="age" [(ngModel)]="animal.age"
+                class="form-control"  />
+        </div>
+    
+        <div class="form-group">
+            <label for="details">Détails</label>
+            <textarea id="details" class="form-control" rows="3" [(ngModel)]="animal.details" 
+                formControlName="details" placeholder="Facultatif"  ></textarea>
+        </div>
+    
+        <a routerLink="/crud" id="cancel" name="cancel" class="btn btn-primary">Retour</a>
+    
+    </form>
+</div>
+
+

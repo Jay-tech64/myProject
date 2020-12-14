@@ -1,0 +1,7 @@
+div[class="container-fluid p-4"]{
+    background-image: url("/assets/images/ferme.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}

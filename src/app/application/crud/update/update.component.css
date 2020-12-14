@@ -1,0 +1,22 @@
+.ng-invalid:not(form).ng-touched{
+    border: 3px solid red;
+    background-color: rgb(255, 159, 159);
+}
+
+div[class="container-fluid p-4"]{
+    background-image: url("/assets/images/ferme.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+
+#errorMessage{
+    animation: blinker 1s linear 4;
+}
+
+@keyframes blinker{
+    50% {
+        opacity: 0;
+    }
+}

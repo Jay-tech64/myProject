@@ -1,0 +1,12 @@
+{
+  "ferme": [
+    {
+      "name": "Léa",
+      "type": "Chat",
+      "color": "Blanc",
+      "age": 11,
+      "details": null,
+      "id": 1
+    }
+  ]
+}
