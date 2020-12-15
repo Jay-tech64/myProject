@@ -76,31 +76,31 @@
             </thead>
             <tbody>
               <tr>
-                <td class="text-center">A<img src="/assets/images/heritage.png" alt="" width="200">B</td>
+                <td class="text-center">A<img [src]="['/assets/images/heritage.png']" alt="heritage" width="200">B</td>
                 <td class="text-center">Héritage</td>
                 <td class="text-center">class A extends B</td>
                 <td class="text-center">B est la classe parent</td>
               </tr>
               <tr>
-                <td class="text-center">A<img src="/assets/images/implementation.png" alt="" width="200">B</td>
+                <td class="text-center">A<img [src]="['/assets/images/implementation.png']" alt="implementation" width="200">B</td>
                 <td class="text-center">Implémentation</td>
                 <td class="text-center">class A implements B</td>
                 <td class="text-center">B est une interface</td>
               </tr>
               <tr>
-                <td class="text-center">A<img src="/assets/images/association.png" alt="" width="200">B</td>
+                <td class="text-center">A<img [src]="['/assets/images/association.png']" alt="association" width="200">B</td>
                 <td class="text-center">Association</td>
                 <td class="text-center">class A utilise B ou vice versa</td>
                 <td class="text-center">Il y a 3 types d'associations</td>
               </tr>
               <tr>
-                <td class="text-center">A<img src="/assets/images/composition.png" alt="" width="200">B</td>
+                <td class="text-center">A<img [src]="['/assets/images/composition.png']" alt="composition" width="200">B</td>
                 <td class="text-center">Composition</td>
                 <td class="text-center">class A est un attribut de class B et doit être instancié pour tout constructeur de B</td>
                 <td class="text-center">Aucune remarque</td>
               </tr>
               <tr>
-                <td class="text-center">A<img src="/assets/images/agregation.png" alt="" width="200">B</td>
+                <td class="text-center">A<img [src]="['/assets/images/agregation.png']" alt="agregation" width="200">B</td>
                 <td class="text-center">Agrégation</td>
                 <td class="text-center">class A est un attribut de class B et l'instanciation est optionnelle pour tout constructeur de B</td>
                 <td class="text-center">Aucune remarque</td>
@@ -119,19 +119,19 @@
             </thead>
             <tbody>
               <tr>
-                <td class="text-center">A<img src="/assets/images/OneToOne.png" alt="" width="200">B</td>
+                <td class="text-center">A<img [src]="['/assets/images/OneToOne.png']" alt="OneToOne" width="200">B</td>
                 <td class="text-center">OneToOne</td>
                 <td class="text-center">classe A est en relation 1 à 1 avec la classe B</td>
                 <td class="text-center">On a le choix entre A devient un attribut de B, ou l'inverse</td>
               </tr>
               <tr>
-                <td class="text-center">A<img src="/assets/images/OneToMany.png" alt="" width="200">B</td>
+                <td class="text-center">A<img [src]="['/assets/images/OneToMany.png']" alt="OneToMany" width="200">B</td>
                 <td class="text-center">OneToMany</td>
                 <td class="text-center">classe A est en relation 1 à plusieurs avec la classe B</td>
                 <td class="text-center">La classe A a un attribut de type tableau de B</td>
               </tr>
               <tr>
-                <td class="text-center">A<img src="/assets/images/ManyToMany.png" alt="" width="200">B</td>
+                <td class="text-center">A<img [src]="['/assets/images/ManyToMany.png']" alt="ManyToMany" width="200">B</td>
                 <td class="text-center">ManyToMany</td>
                 <td class="text-center">classe A est en relation plusieurs à plusieurs avec la classe B</td>
                 <td class="text-center">On doit créer une nouvelle class AB qui aura au moins 1 attribut de chaque classes</td>
