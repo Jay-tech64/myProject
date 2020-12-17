@@ -1,6 +1,6 @@
-<div class="container-fluid">
-    <h1 class="text-center">Ma ferme virtuelle !</h1>
-
+<div class="container-fluid table-responsive">
+    <h1 class="text-center display-3 mb-4">Ma ferme virtuelle !</h1>
+    
     <button [routerLink]="[ '/formulaire']" class="btn btn-success mb-1">Ajouter un Chouchou!</button>
     <table class="table table-dark">
         <thead>
@@ -10,7 +10,7 @@
             <th scope="col">Couleur</th>
             <th scope="col">Âge</th>
             <th scope="col">Détails</th>
-            <th scope="col" width="340px">Opération</th>
+            <th scope="col">Opération</th>
           </tr>
         </thead>
         <tbody>
@@ -21,9 +21,15 @@
             <td>{{item.age}} ans</td>
             <td>{{item.details}}</td>
             <td>
-                <a [routerLink]="[ '/show/', item.id]" class="btn btn-info">Afficher</a>
-                <a [routerLink]="[ '/update/', item.id]" class="btn mx-2 btn-primary">Mettre à jour</a>
-                <button type="button" (click)="delete(item.id, i)" class="btn btn-danger">Supprimer</button>
+              <div class="container">
+                <div class="row mb-2 d-flex">
+                  <a [routerLink]="[ '/show/', item.id]" class="btn btn-info col-lg-5 mr-auto" >Afficher</a>
+                  <a [routerLink]="[ '/update/', item.id]" class="btn btn-primary col-lg-6">Mettre à jour</a>
+                </div>
+                <div class="row">
+                  <button type="button" (click)="delete(item.id, i)" class="btn btn-danger col-lg-12">Supprimer</button>
+                </div>
+              </div>
                 
                 
                  

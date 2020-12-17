@@ -1,152 +1,183 @@
 <ng-container [ngSwitch]="myParametre">
-<ng-container *ngSwitchCase="1">
+  <ng-container *ngSwitchCase="1">
     <div>
-        <div class="container-fluid" >
-            <div class="row text-center">
-                <h1 class="text-center display-3 pt-3 col-sm-12 col-md-6">Mini-tutoriel Angular</h1>
-                <i class="fab fa-angular text-danger fa-10x col-sm-12 col-md-6"></i>
-            </div>
+      <div class="container-fluid">
+        <div class="row text-center">
+          <h1 class="text-center display-3 pt-3 col-sm-12 col-md-6">Mini-tutoriel Angular</h1>
+          <i class="fab fa-angular text-danger fa-10x col-sm-12 col-md-6"></i>
         </div>
-        <div class="def my-4">
-            <h2>Qu'est-ce qu'Angular?</h2>
-            <p class="lead">Angular est un framework front-end concu pour le développement d'applications dites "Single Page Application". </p>      
-        </div>
-        <p class="h3">Voici les caractéristiques clés qui font d'Angular ce qu'il est :</p>
-        <ol>
-            <li class="h4">C'est un framework basé sur des composants</li>
-            <p>Cela signifie que notre application finale va être composée de plusieurs petits composant lequels, ensemble, vont former notre application. Une analogie que j'aime bien faire pour expliquer ce concept est celle avec un casse-tête. Chaque morceaux du casse-tête (les composants), en eux-même, ne sont pas très significatifs. Par contre, lorsqu'on les mets tous ensembles, c'est là qu'on peut voir l'image globale souhaitée (notre application). </p>
-            <p>Ce qui est génial avec les composants, c'est qu'on peut les réutiliser (ce qui veut dire moins de lignes de code). Un exemple de cette application de le fameux bouton « <span><i class="fas fa-thumbs-up text-primary"></i></span> » de Facebook.</p>
-            
-            <li class="h4">Routage côté client</li>
-            <p>Cette caractéristique va vous sauvé beaucoup de temps. En effet, avec Angular, il est possible de faire du routage côté client. Cela signifie que lorsqu'on clique sur un lien pour aller vers une autre page, on ne fait pas directement de requête au serveur. C'est Angular qui se charge d'aller chercher les informations qui nous faut pour la page Web désirée, et cela nous permet de sauver un temps fou!</p>
+      </div>
+      <div class="def my-4">
+        <h2>Qu'est-ce qu'Angular?</h2>
+        <p class="lead">Angular est un framework front-end concu pour le développement d'applications dites "Single Page
+          Application". </p>
+      </div>
+      <p class="h3">Voici les caractéristiques clés qui font d'Angular ce qu'il est :</p>
+      <ol>
+        <li class="h4">C'est un framework basé sur des composants</li>
+        <p>Cela signifie que notre application finale va être composée de plusieurs petits composants lesquels, ensemble,
+          vont former notre application. Une analogie que j'aime bien faire pour expliquer ce concept est celle avec un
+          casse-tête. Chaque morceau du casse-tête (les composants), en eux-mêmes, n'est pas très significatif. Par
+          contre, lorsqu'on les met tous ensemble, c'est là qu'on peut voir l'image globale souhaitée (notre
+          application). </p>
+        <p>Ce qui est génial avec les composants, c'est qu'on peut les réutiliser (ce qui veut dire moins de lignes de
+          code). Un exemple de cette application est le fameux bouton « <span><i
+              class="fas fa-thumbs-up text-primary"></i></span> » de Facebook.</p>
 
-            <li class="h4">Injection de dépendance</li>
-            <p>En gros, ce que l'injection de dépendance vous permet de faire, en tant que programmeur, c'est de vous faciliter énormément la vie lorsque vient le temps des tests unitaires. Par exemple, lors du test d'un composant, celui pourrait être dépendant d'un autre composant et/ou module pour bien fonctionner. C'est ici qu'Angular embarque. Il va faire en sorte que le composant testé ai tout ce dont il a besoin pour pouvoir faire les tests dont eu veut lui faire.</p>
-            
-            <li class="h4">Facilite la programmation orientée objet</li>
-            <p>Grâce au langage de programmation TypeScript, les programmeurs Java se sentiront chez eux. En effet, les concepts d'héritage, de polymorphisme, d'encapsulation (private, protected, public, ...), d'abstraction (les interfaces) et de visibilité (package) sont rendus possible grâce à ce langage.</p>
-        
-        </ol>
+        <li class="h4">Routage côté client</li>
+        <p>Cette caractéristique va vous sauver beaucoup de temps. En effet, avec Angular, il est possible de faire du
+          routage côté client. Cela signifie que lorsqu'on clique sur un lien pour aller vers une autre page, on ne fait
+          pas directement de requête au serveur. C'est Angular qui se charge d'aller chercher les informations qu'il nous
+          faut pour la page Web désirée, et cela nous permet de sauver un temps fou!</p>
+
+        <li class="h4">Injection de dépendance</li>
+        <p>En gros, ce que l'injection de dépendance vous permet de faire, en tant que programmeur, c'est de vous
+          faciliter énormément la vie lorsque vient le temps des tests unitaires. Par exemple, lors du test d'un
+          composant, celui pourrait être dépendant d'un autre composant et/ou module pour bien fonctionner. C'est ici
+          qu'Angular embarque. Il va faire en sorte que le composant testé ait tout ce dont il a besoin pour pouvoir
+          faire les tests dont eu veut lui faire.</p>
+
+        <li class="h4">Facilite la programmation orientée objet</li>
+        <p>Grâce au langage de programmation TypeScript, les programmeurs Java se sentiront chez eux. En effet, les
+          concepts d'héritage, de polymorphisme, d'encapsulation (private, protected, public, ...), d'abstraction (les
+          interfaces) et de visibilité (package) sont rendus possibles grâce à ce langage.</p>
+
+      </ol>
     </div>
 
-</ng-container>
-<ng-container *ngSwitchCase="2">
+  </ng-container>
+  <ng-container *ngSwitchCase="2">
     <div>
-        <h1 class="text-center display-3 pt-3">Mini-tutoriel Crud</h1>
-        <div class="def my-4">
-            <h2>Qu'est-ce que le Crud?</h2>
-            <p class="lead">Le crud est un acronyme qui représente 4 opérations de requêtes HTML: <span class="font-weight-bold">C</span>REATE , <span class="font-weight-bold">R</span>EAD, <span class="font-weight-bold">U</span>PDATE, <span class="font-weight-bold">D</span>ELETE.</p>      
-        </div>
-        <p class="h3 my-4">C'est 4 opérations sont utilisés lorsqu'on fait appel à un WebService pour communiquer avec une base de données:</p>
-        <ol>
-            <li class="h4">CREATE</li>
-            <p>L'opération CREATE permet de créer une nouvelle donnée et de l'insérer dans la base de données</p>
-                        
-            <li class="h4">READ</li>
-            <p>L'opération READ permet de lire une donnée dans une base de données</p>
+      <h1 class="text-center display-3 pt-3">Mini-tutoriel Crud</h1>
+      <div class="def my-4">
+        <h2>Qu'est-ce que le Crud?</h2>
+        <p class="lead">Le crud est un acronyme qui représente 4 opérations de requêtes HTML: <span
+            class="font-weight-bold">C</span>REATE , <span class="font-weight-bold">R</span>EAD, <span
+            class="font-weight-bold">U</span>PDATE, <span class="font-weight-bold">D</span>ELETE.</p>
+      </div>
+      <p class="h3 my-4">Ces 4 opérations sont utilisées lorsqu'on fait appel à un WebService pour communiquer avec une
+        base de données:</p>
+      <ol>
+        <li class="h4">CREATE</li>
+        <p>L'opération CREATE permet de créer une nouvelle donnée et de l'insérer dans la base de données</p>
 
-            <li class="h4">UPDATE</li>
-            <p>L'opration UPDATE permet de mettre à jour une donnée dans une base de données</p>
-            
-            <li class="h4">DELETE</li>
-            <p>L'opération DELETE permet de supprimer une donnée dans une base de données</p>
-        </ol>
-        <div class="my-4 p-2 text-light bg-secondary" style="border-radius: 10px;">
-            <p class="lead">Les développeurs décident d'utiliser un WebService principalement pour protéger les données de la base de donnée. En effet, sans un WebService, la base de donnée serait visible à partir du navigateur et n'importe qui pourrait accéder à la base de données.</p>
-        </div>
+        <li class="h4">READ</li>
+        <p>L'opération READ permet de lire une donnée dans une base de données</p>
+
+        <li class="h4">UPDATE</li>
+        <p>L'opération UPDATE permet de mettre à jour une donnée dans une base de données</p>
+
+        <li class="h4">DELETE</li>
+        <p>L'opération DELETE permet de supprimer une donnée dans une base de données</p>
+      </ol>
+      <div class="my-4 p-2 text-light bg-secondary" style="border-radius: 10px;">
+        <p class="lead">Les développeurs décident d'utiliser un WebService principalement pour protéger les données de
+          la base de données. En effet, sans un WebService, la base de données serait visible à partir du navigateur et
+          n'importe qui pourrait accéder à la base de données.</p>
+      </div>
     </div>
 
-</ng-container>
-<ng-container *ngSwitchCase="3">
+  </ng-container>
+  <ng-container *ngSwitchCase="3">
     <div>
-        <h1 class="text-center display-3 py-3">Mini-tutoriel Relation</h1>
-        <div class="def my-4">
-            <h2>Qu'est-ce que les relations?</h2>
-            <p class="lead">Les relations sont les types de liaisons possibles entre les objets d'un diagramme UML</p>
-        </div>
-        <p class="h3 my-4">Voici les types de liaisons qui existent:</p>
-        <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col" class="text-center" width="300px">Formes</th>
-                <th scope="col" class="text-center">Définition</th>
-                <th scope="col" class="text-center">Code Typescript</th>
-                <th scope="col" class="text-center">Remarques</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-center">A<img [src]="['/assets/images/heritage.png']" alt="heritage" width="200">B</td>
-                <td class="text-center">Héritage</td>
-                <td class="text-center">class A extends B</td>
-                <td class="text-center">B est la classe parent</td>
-              </tr>
-              <tr>
-                <td class="text-center">A<img [src]="['/assets/images/implementation.png']" alt="implementation" width="200">B</td>
-                <td class="text-center">Implémentation</td>
-                <td class="text-center">class A implements B</td>
-                <td class="text-center">B est une interface</td>
-              </tr>
-              <tr>
-                <td class="text-center">A<img [src]="['/assets/images/association.png']" alt="association" width="200">B</td>
-                <td class="text-center">Association</td>
-                <td class="text-center">class A utilise B ou vice versa</td>
-                <td class="text-center">Il y a 3 types d'associations</td>
-              </tr>
-              <tr>
-                <td class="text-center">A<img [src]="['/assets/images/composition.png']" alt="composition" width="200">B</td>
-                <td class="text-center">Composition</td>
-                <td class="text-center">class A est un attribut de class B et doit être instancié pour tout constructeur de B</td>
-                <td class="text-center">Aucune remarque</td>
-              </tr>
-              <tr>
-                <td class="text-center">A<img [src]="['/assets/images/agregation.png']" alt="agregation" width="200">B</td>
-                <td class="text-center">Agrégation</td>
-                <td class="text-center">class A est un attribut de class B et l'instanciation est optionnelle pour tout constructeur de B</td>
-                <td class="text-center">Aucune remarque</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="h3 my-4">Voici les types d'associations qui existent:</p>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col" class="text-center" width="300px">Formes</th>
-                <th scope="col" class="text-center">Définition</th>
-                <th scope="col" class="text-center">Code Typescript</th>
-                <th scope="col" class="text-center">Remarques</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-center">A<img [src]="['/assets/images/OneToOne.png']" alt="OneToOne" width="200">B</td>
-                <td class="text-center">OneToOne</td>
-                <td class="text-center">classe A est en relation 1 à 1 avec la classe B</td>
-                <td class="text-center">On a le choix entre A devient un attribut de B, ou l'inverse</td>
-              </tr>
-              <tr>
-                <td class="text-center">A<img [src]="['/assets/images/OneToMany.png']" alt="OneToMany" width="200">B</td>
-                <td class="text-center">OneToMany</td>
-                <td class="text-center">classe A est en relation 1 à plusieurs avec la classe B</td>
-                <td class="text-center">La classe A a un attribut de type tableau de B</td>
-              </tr>
-              <tr>
-                <td class="text-center">A<img [src]="['/assets/images/ManyToMany.png']" alt="ManyToMany" width="200">B</td>
-                <td class="text-center">ManyToMany</td>
-                <td class="text-center">classe A est en relation plusieurs à plusieurs avec la classe B</td>
-                <td class="text-center">On doit créer une nouvelle class AB qui aura au moins 1 attribut de chaque classes</td>
-              </tr>
-            </tbody>
-          </table>
+      <h1 class="text-center display-3 py-3">Mini-tutoriel Relations</h1>
+      <div class="def my-4">
+        <h2>Qu'est-ce que les relations?</h2>
+        <p class="lead">Les relations sont les types de liaisons possibles entre les objets d'un diagramme UML</p>
+      </div>
+      <p class="h3 my-4">Voici les types de liaisons qui existent:</p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" class="text-center" width="300px">Formes</th>
+            <th scope="col" class="text-center">Définition</th>
+            <th scope="col" class="text-center">Code Typescript</th>
+            <th scope="col" class="text-center">Remarques</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center">A<img [src]="['/assets/images/heritage.png']" alt="heritage" width="200">B</td>
+            <td class="text-center">Héritage</td>
+            <td class="text-center">class A extends B</td>
+            <td class="text-center">B est la classe parent</td>
+          </tr>
+          <tr>
+            <td class="text-center">A<img [src]="['/assets/images/implementation.png']" alt="implementation"
+                width="200">B</td>
+            <td class="text-center">Implémentation</td>
+            <td class="text-center">class A implements B</td>
+            <td class="text-center">B est une interface</td>
+          </tr>
+          <tr>
+            <td class="text-center">A<img [src]="['/assets/images/association.png']" alt="association" width="200">B
+            </td>
+            <td class="text-center">Association</td>
+            <td class="text-center">class A utilise B ou vice versa</td>
+            <td class="text-center">Il y a 3 types d'associations</td>
+          </tr>
+          <tr>
+            <td class="text-center">A<img [src]="['/assets/images/composition.png']" alt="composition" width="200">B
+            </td>
+            <td class="text-center">Composition</td>
+            <td class="text-center">class A est un attribut de class B et doit être instancié pour tout constructeur de
+              B</td>
+            <td class="text-center">Aucune remarque</td>
+          </tr>
+          <tr>
+            <td class="text-center">A<img [src]="['/assets/images/agregation.png']" alt="agregation" width="200">B</td>
+            <td class="text-center">Agrégation</td>
+            <td class="text-center">class A est un attribut de class B et l'instanciation est optionnelle pour tout
+              constructeur de B</td>
+            <td class="text-center">Aucune remarque</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="h3 my-4">Voici les types d'associations qui existent:</p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" class="text-center" width="300px">Formes</th>
+            <th scope="col" class="text-center">Définition</th>
+            <th scope="col" class="text-center">Code Typescript</th>
+            <th scope="col" class="text-center">Remarques</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center">A<img [src]="['/assets/images/OneToOne.png']" alt="OneToOne" width="200">B</td>
+            <td class="text-center">OneToOne</td>
+            <td class="text-center">classe A est en relation 1 à 1 avec la classe B</td>
+            <td class="text-center">On a le choix entre A devient un attribut de B, ou l'inverse</td>
+          </tr>
+          <tr>
+            <td class="text-center">A<img [src]="['/assets/images/OneToMany.png']" alt="OneToMany" width="200">B</td>
+            <td class="text-center">OneToMany</td>
+            <td class="text-center">classe A est en relation 1 à plusieurs avec la classe B</td>
+            <td class="text-center">La classe A a un attribut de type tableau de B</td>
+          </tr>
+          <tr>
+            <td class="text-center">A<img [src]="['/assets/images/ManyToMany.png']" alt="ManyToMany" width="200">B</td>
+            <td class="text-center">ManyToMany</td>
+            <td class="text-center">classe A est en relation plusieurs à plusieurs avec la classe B</td>
+            <td class="text-center">On doit créer une nouvelle class AB qui aura au moins 1 attribut de chaque classes
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-</ng-container>
-<ng-container *ngSwitchDefault>
+  </ng-container>
+  <ng-container *ngSwitchDefault>
     <div>
-        <a [routerLink]="[ '/error']">name</a>
+      <div class="def my-4">
+        <h2>Mini-tutoriel en construction...</h2>
+        <p class="lead">Revenir plus tard pour découvrir le mystérieux tutoriel!</p>
+      </div>
+      <button [routerLink]="[ '/home']" class="btn btn-primary">Home</button>
     </div>
 
-</ng-container>
+  </ng-container>
 </ng-container>
 
 
@@ -179,5 +210,3 @@
     </div>
 </ng-template>
 -->
-
-

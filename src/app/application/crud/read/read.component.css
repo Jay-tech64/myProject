@@ -76,3 +76,13 @@
 	display: inline-block;
 	margin: 100px auto;
 }
+
+/* image de fond */
+div[class="container-fluid table-responsive"]{
+    background-image: url("/assets/images/fermeCrud.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+     
+}

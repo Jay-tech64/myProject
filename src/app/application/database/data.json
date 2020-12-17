@@ -5,8 +5,64 @@
       "type": "Chat",
       "color": "Blanc",
       "age": 11,
-      "details": null,
+      "details": "Awnnn!!! SO CUTE!",
       "id": 1
+    },
+    {
+      "name": "Samy",
+      "type": "Chien",
+      "color": "Noir",
+      "age": 10,
+      "details": "Who's a good boy!!! Who's a good boy!!! Yes you are!",
+      "id": 2
+    },
+    {
+      "name": "Allo",
+      "type": "Oiseau",
+      "color": "Jaune",
+      "age": 2,
+      "details": "Piou Piou\n",
+      "id": 3
+    },
+    {
+      "name": "coucou",
+      "type": "Oiseau",
+      "color": "Vert",
+      "age": 4,
+      "details": null,
+      "id": 4
+    },
+    {
+      "name": "toto",
+      "type": "Vache",
+      "color": "Rose",
+      "age": 5,
+      "details": null,
+      "id": 5
+    },
+    {
+      "name": "tata",
+      "type": "Cheval",
+      "color": "Brun",
+      "age": 7,
+      "details": null,
+      "id": 6
+    },
+    {
+      "name": "yoyo",
+      "type": "Chien",
+      "color": "Rouge",
+      "age": 2,
+      "details": null,
+      "id": 7
+    },
+    {
+      "name": "yaya",
+      "type": "Chien",
+      "color": "Bleu",
+      "age": 2,
+      "details": null,
+      "id": 8
     }
   ]
 }
